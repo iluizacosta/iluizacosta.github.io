@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de uma estudante de Engenharia de Computação, com projetos em desenvolvimento web, inteligência artificial e automação." />
+  <meta name="description"
+    content="Portfólio de uma estudante de Engenharia de Computação, com projetos em desenvolvimento web, inteligência artificial e automação." />
   <meta name="theme-color" content="#202020" />
   <title>Luiza Costa — Engenharia de Computação</title>
 
   <!-- Fontes gratuitas. O site continua funcionando mesmo se elas não carregarem. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
@@ -27,9 +31,15 @@
       --radius: 3px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       background: var(--cream);
@@ -39,7 +49,10 @@
       overflow-x: hidden;
     }
 
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     img {
       max-width: 100%;
@@ -119,7 +132,9 @@
       transition: width .25s ease;
     }
 
-    nav a:hover::after { width: 100%; }
+    nav a:hover::after {
+      width: 100%;
+    }
 
     .menu-btn {
       display: none;
@@ -237,7 +252,7 @@
       mix-blend-mode: multiply;
       background: #bdb2a5;
       border-radius: 180px 180px 0 0;
-      box-shadow: 20px 20px 0 rgba(31,31,30,.06);
+      box-shadow: 20px 20px 0 rgba(31, 31, 30, .06);
     }
 
     .photo-fallback {
@@ -264,7 +279,7 @@
       line-height: 1.3;
       letter-spacing: .13em;
       text-transform: uppercase;
-      background: rgba(238,231,220,.8);
+      background: rgba(238, 231, 220, .8);
     }
 
     .availability strong {
@@ -315,7 +330,9 @@
       padding-bottom: 20px;
     }
 
-    .projects .section-heading p { color: #aaa59c; }
+    .projects .section-heading p {
+      color: #aaa59c;
+    }
 
     .project-grid {
       display: grid;
@@ -413,8 +430,13 @@
       padding: 22px;
     }
 
-    .terminal .green { color: #bdb5a9; }
-    .terminal .blue { color: #eee7dc; }
+    .terminal .green {
+      color: #bdb5a9;
+    }
+
+    .terminal .blue {
+      color: #eee7dc;
+    }
 
     .mobile-preview {
       background: #d6cec2;
@@ -433,7 +455,7 @@
       background: #f5efe5;
       padding: 18px 9px;
       position: relative;
-      box-shadow: 10px 10px 0 rgba(0,0,0,.08);
+      box-shadow: 10px 10px 0 rgba(0, 0, 0, .08);
     }
 
     .phone::before {
@@ -469,8 +491,13 @@
       text-transform: uppercase;
     }
 
-    .project-link span { transition: transform .2s ease; }
-    .project:hover .project-link span { transform: translateX(5px); }
+    .project-link span {
+      transition: transform .2s ease;
+    }
+
+    .project:hover .project-link span {
+      transform: translateX(5px);
+    }
 
     /* =========================
        ABOUT / SKILLS
@@ -721,7 +748,9 @@
       color: var(--white);
     }
 
-    .button span { font-size: 16px; }
+    .button span {
+      font-size: 16px;
+    }
 
     .contact-info {
       border-left: 1px solid var(--line);
@@ -746,7 +775,9 @@
       margin-bottom: 2px;
     }
 
-    .contact-item a:hover { text-decoration: underline; }
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
 
     /* =========================
        FOOTER
@@ -858,7 +889,9 @@
         padding: 20px;
       }
 
-      nav.open { display: block; }
+      nav.open {
+        display: block;
+      }
 
       nav ul {
         flex-direction: column;
@@ -928,8 +961,15 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { transition: none !important; }
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
     }
   </style>
 </head>
@@ -996,12 +1036,7 @@
 
         <div class="hero-photo-wrap">
           <div class="photo-fallback"></div>
-          <img
-            class="hero-photo"
-            id="profilePhoto"
-            src="images/perfil.jpeg"
-            alt="Foto de Luiza Costa"
-          />
+          <img class="hero-photo" id="profilePhoto" src="images/perfil.png" alt="Foto de Luiza Costa" />
 
           <div class="availability">
             <div>
@@ -1334,17 +1369,18 @@
     document.getElementById("footerInitial").textContent = initial;
 
     // GitHub
-    if (CONFIG.github && CONFIG.github !== "iluizacosta") {
+    if (CONFIG.github) {
       const githubUrl = `https://github.com/${CONFIG.github}`;
 
       document.getElementById("githubLink").href = githubUrl;
-      document.getElementById("githubLink").textContent = `github.com/${CONFIG.github}`;
-
+      document.getElementById("githubLink").textContent =
+        `github.com/${CONFIG.github}`;
     }
 
     // LinkedIn
-    if (CONFIG.linkedin && CONFIG.linkedin !== "iluizacosta") {
+    if (CONFIG.linkedin) {
       const linkedinUrl = `https://www.linkedin.com/in/${CONFIG.linkedin}/`;
+
       document.getElementById("linkedinLink").href = linkedinUrl;
       document.getElementById("linkedinLink").textContent =
         `linkedin.com/in/${CONFIG.linkedin}`;
@@ -1382,4 +1418,5 @@
     });
   </script>
 </body>
+
 </html>
