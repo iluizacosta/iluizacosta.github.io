@@ -237,6 +237,7 @@
       mix-blend-mode: multiply;
       background: #bdb2a5;
       border-radius: 180px 180px 0 0;
+      box-shadow: 20px 20px 0 rgba(31,31,30,.06);
     }
 
     .photo-fallback {
@@ -951,7 +952,7 @@
     <div class="container nav">
       <a href="#inicio" class="brand" aria-label="Página inicial">
         <span class="brand-mark" id="brandInitial">A</span>
-        <span id="brandName">SEU NOME</span>
+        <span id="brandName">LUIZA COSTA</span>
       </a>
 
       <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
@@ -989,7 +990,7 @@
               desenvolvimento web, inteligência artificial e automação de processos.
               Este portfólio reúne meus principais projetos e aprendizados.
             </p>
-            <div class="signature" id="signature">Seu Nome</div>
+            <div class="signature" id="signature">Luiza Costa</div>
           </div>
         </div>
 
@@ -1258,7 +1259,7 @@
             na área de tecnologia.
           </p>
 
-          <a class="button" id="emailButton" href="mailto:seuemail@email.com">
+          <a class="button" id="emailButton" href="mailto:analuizaoliveiracollege@gmail.com">
             Entrar em contato <span>→</span>
           </a>
         </div>
@@ -1268,7 +1269,7 @@
             <div>✉</div>
             <div>
               <strong>E-mail</strong>
-              <a id="emailLink" href="mailto:seuemail@email.com">seuemail@email.com</a>
+              <a id="emailLink" href="mailto:analuizaoliveiracollege@gmail.com">analuizaoliveiracollege@gmail.com</a>
             </div>
           </div>
 
@@ -1276,7 +1277,7 @@
             <div>⌘</div>
             <div>
               <strong>GitHub</strong>
-              <a id="githubLink" href="#" target="_blank" rel="noopener">github.com/seuusuario</a>
+              <a id="githubLink" href="#" target="_blank" rel="noopener">github.com/iluizacosta</a>
             </div>
           </div>
 
@@ -1284,7 +1285,7 @@
             <div>in</div>
             <div>
               <strong>LinkedIn</strong>
-              <a id="linkedinLink" href="#" target="_blank" rel="noopener">linkedin.com/in/seuusuario</a>
+              <a id="linkedinLink" href="#" target="_blank" rel="noopener">linkedin.com/in/iluizacosta</a>
             </div>
           </div>
 
@@ -1304,7 +1305,7 @@
     <div class="container footer-grid">
       <div class="footer-brand" id="footerInitial">A</div>
       <div>Construindo soluções · aprendendo todos os dias.</div>
-      <div>© <span id="year"></span> <span id="footerName">Seu Nome</span></div>
+      <div>© <span id="year"></span> <span id="footerName">Luiza Costa</span></div>
     </div>
   </footer>
 
@@ -1315,10 +1316,10 @@
       ==========================================================
     */
     const CONFIG = {
-      nome: "Seu Nome",
-      github: "SEU_USUARIO",
-      linkedin: "SEU_USUARIO",
-      email: "seuemail@email.com"
+      nome: "Luiza Costa",
+      github: "iluizacosta",
+      linkedin: "iluizacosta",
+      email: "analuizaoliveiracollege@gmail.com"
     };
 
     // Nome
@@ -1333,7 +1334,7 @@
     document.getElementById("footerInitial").textContent = initial;
 
     // GitHub
-    if (CONFIG.github && CONFIG.github !== "SEU_USUARIO") {
+    if (CONFIG.github && CONFIG.github !== "iluizacosta") {
       const githubUrl = `https://github.com/${CONFIG.github}`;
 
       document.getElementById("githubLink").href = githubUrl;
@@ -1342,7 +1343,7 @@
     }
 
     // LinkedIn
-    if (CONFIG.linkedin && CONFIG.linkedin !== "SEU_USUARIO") {
+    if (CONFIG.linkedin && CONFIG.linkedin !== "iluizacosta") {
       const linkedinUrl = `https://www.linkedin.com/in/${CONFIG.linkedin}/`;
       document.getElementById("linkedinLink").href = linkedinUrl;
       document.getElementById("linkedinLink").textContent =
